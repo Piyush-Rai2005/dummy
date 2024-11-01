@@ -37,7 +37,7 @@ img{
     pointer-events: none;
     user-select: none;
 }
-#home{
+#dashboard{
     color: white;
     text-decoration: none;
 }
@@ -53,7 +53,7 @@ img{
     color: black;
     text-decoration: none;
 }
-#home:hover{
+#dashboard:hover{
     text-decoration: none;
     color: aqua;
 }
@@ -151,7 +151,7 @@ button{
 }
 button:hover{
     cursor: pointer;
-    background-color: rgb(85, 172, 249);
+    background-color: blueviolet;
 }
 #new{
     text-decoration: none;
