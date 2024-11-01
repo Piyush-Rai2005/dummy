@@ -14,3 +14,6 @@ function toggle(section){
         login.classList.remove('active');   
     }
 }
+document.getElementById("dashboard").addEventListener("click", function() {
+  window.location.href = '/dashboard/dashboard.html';
+});
