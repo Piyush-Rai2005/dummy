@@ -86,7 +86,7 @@ img{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display: flex;
   background-color: #afd7ef;
-  justify-content: left;
+  justify-content: center;
   padding: 1em;
   border-radius: 10px;
   overflow-y:scroll;
@@ -121,24 +121,25 @@ body.fade-in {
 }
 
 .announcement-section {
-    width: 300px; /* Width of the announcement section */
-    height: 500px; /* Height of the announcement section */
+    height: 500px;
     border: 2px solid #ccc;
+    background-color: white;
     border-radius: 5px;
     overflow: hidden; /* Hide overflow */
     position: relative;
 }
 
 .notification-container {
-    height: 100%;
-    overflow-y: auto; /* Enable vertical scrolling */
-    animation: scroll 10s linear infinite; /* Continuous scrolling animation */
+  background-color: white;
+    overflow-y: auto; 
+  animation: scroll 15s linear infinite;
+
 }
 
 .notification {
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-bottom: 1px solid #ccc; /* Border between notifications */
+    background-color: white;
+    border-bottom: 1px solid #ccc; 
 }
 
 @keyframes scroll {
@@ -146,10 +147,10 @@ body.fade-in {
         transform: translateY(0);
     }
     100% {
-        transform: translateY(-100%); /* Scroll upwards */
+        transform: translateY(-100%); 
     }
 }
 
 .notification-container:hover {
-    animation-play-state: paused; /* Pause scrolling on hover */
+    animation-play-state: paused; 
 }
