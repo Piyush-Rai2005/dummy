@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import '../App.css'
+import '../pages/login/login.css'
 import Axios from 'axios'
 import { useNavigate, Link } from 'react-router-dom';
 
-const Signup = () => {
+export const Signup = () => {
 
         const [name, setname] = useState("");
         const [email, setEmail] = useState("");
@@ -57,4 +57,3 @@ const Signup = () => {
   )
 }
 
-export default Signup

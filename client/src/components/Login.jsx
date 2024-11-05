@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import '../App.css'
+import '../pages/login/login.css'
 import Axios from 'axios'
 import { useNavigate, Link } from 'react-router-dom';
 
-const Login = () => {
+export const Login = () => {
         const [regno, setRegno] = useState("");
         const [password, setPassword] = useState("")
       
@@ -35,7 +35,7 @@ const Login = () => {
         <input type="password" placeholder='******'
           onChange={(e) => setPassword(e.target.value)} />
 
-        <button type='submit'>Login</button>
+        <Link to="/Dashboard"><button type='submit'>Login</button></Link>
         <p>Don't have an Account <Link to='/Signup'><button className='login'>Signup</button></Link></p>
         
       </form>
@@ -45,4 +45,3 @@ const Login = () => {
   )
 }
 
-export default Login
